@@ -1,0 +1,54 @@
+{
+  "college": {
+    "name": "CSI Wesley Institute of Technology and Sciences",
+    "shortName": "CSI WITS",
+    "established": 2015,
+    "sponsorship": "Church of South India Medak Diocese",
+    "affiliation": "Jawaharlal Nehru Technological University, Hyderabad (JNTUH)",
+    "approval": "AICTE, New Delhi",
+    "eamcetCode": "WESL",
+    "ecetCode": "WESL",
+    "location": {
+      "address": "CFRP+5MC, PG Road, Sappu Bagh Apartment, Nallagutta, Begumpet, Hyderabad, Telangana 500003",
+      "phone": "040 27818137",
+      "website": "https://wesleyengineeringcollege.com/"
+    },
+    "courses": [
+      {
+        "degree": "B.Tech",
+        "duration": "4 Years",
+        "branches": [
+          "Computer Science and Engineering (CSE)",
+          "CSE - Artificial Intelligence & Machine Learning (AI&ML)",
+          "CSE - Data Science",
+          "Electronics & Communication Engineering (ECE)",
+          "Electrical & Electronics Engineering (EEE)"
+        ]
+      }
+    ],
+    "admissions": {
+      "notification": "Admissions are conducted through EAMCET (Engineering Agriculture and Medical Common Entrance Test) counselling.",
+      "feeStructure": "Please contact the admission office for current fee structure details.",
+      "documents": [
+        "SSC/10th Pass Certificate",
+        "Intermediate/12th Pass Certificate",
+        "EAMCET Hall Ticket",
+        "Aadhaar Card",
+        "Community Certificate (if applicable)"
+      ]
+    },
+    "academicCalendar": {
+      "semesterDuration": "6 months",
+      "semestersPerYear": 2,
+      "academicYear": "July to June"
+    },
+    "facilities": [
+      "Well-equipped laboratories and computing centers",
+      "Library with digital resources",
+      "Sports and recreation facilities",
+      "Hostel accommodations",
+      "Cafeteria",
+      "Health center"
+    ]
+  }
+}
