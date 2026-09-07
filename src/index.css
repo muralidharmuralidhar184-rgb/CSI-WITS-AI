@@ -1,0 +1,184 @@
+@import 'tailwindcss';
+
+* {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+:root {
+  /* Light theme */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f4f5;
+  --surface: #ffffff;
+  --surface-elevated: #fafafa;
+  --text-primary: #09090b;
+  --text-secondary: #27272a;
+  --text-muted: #71717a;
+  --border: #e4e4e7;
+  --border-strong: #d4d4d8;
+  --button-primary: #09090b;
+  --button-primary-text: #ffffff;
+  --focus-ring: #09090b;
+}
+
+.dark {
+  /* Dark theme */
+  --bg-primary: #000000;
+  --bg-secondary: #09090b;
+  --surface: #121212;
+  --surface-elevated: #18181b;
+  --text-primary: #ffffff;
+  --text-secondary: #d4d4d8;
+  --text-muted: #8a8a8a;
+  --border: #27272a;
+  --border-strong: #3f3f46;
+  --button-primary: #ffffff;
+  --button-primary-text: #000000;
+  --focus-ring: #ffffff;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition-duration: 0.001ms !important;
+}
+
+/* Focus styles */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Monochrome contrast text */
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: var(--button-primary);
+  color: var(--button-primary-text);
+  border: 1px solid var(--button-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  min-height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Background and surfaces */
+.bg-surface {
+  background-color: var(--surface);
+}
+
+.bg-surface-elevated {
+  background-color: var(--surface-elevated);
+}
+
+/* Borders */
+.border-default {
+  border-color: var(--border);
+}
+
+.border-strong {
+  border-color: var(--border-strong);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Markdown styles */
+.markdown-body {
+  color: var(--text-primary);
+  background-color: transparent;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  color: var(--text-primary);
+  border-bottom-color: var(--border);
+}
+
+.markdown-body code {
+  background-color: var(--surface-elevated);
+  color: var(--text-primary);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.markdown-body pre {
+  background-color: var(--surface-elevated);
+  border-color: var(--border);
+}
+
+.markdown-body blockquote {
+  border-left-color: var(--border-strong);
+  color: var(--text-secondary);
+}
+
+/* Touch target minimum size */
+button,
+a,
+input[type="button"],
+input[type="submit"] {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+/* Remove tap highlight on mobile */
+-webkit-tap-highlight-color: transparent;
+
+/* Safe area insets for notched devices */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+    padding-top: max(0px, env(safe-area-inset-top));
+  }
+}
+
+/* Prevent double tap zoom delay */
+input,
+button,
+textarea,
+select {
+  touch-action: manipulation;
+}
