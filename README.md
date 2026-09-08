@@ -126,7 +126,6 @@ const MAX_ATTEMPTS_PER_MODEL = 3;
 5. If all 3 attempts on Primary Model fail, server seamlessly switches to `FALLBACK_MODEL` (`gemini-3.5-flash`).
 6. Server streams SSE status update: `data: {"type":"status","message":"Switching to backup model..."}`.
 7. Upon successful completion, server streams final markdown response: `data: {"type":"success","text":"..."}`.
-```
 
 ---
 
